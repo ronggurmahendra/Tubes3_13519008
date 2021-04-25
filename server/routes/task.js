@@ -12,7 +12,7 @@ router.route('/').get((req, res) =>{
 // topikTugas
 
 router.route('/add').post((req, res) =>{
-    const date =  Date.parse(req.body.date);
+    const date =  req.body.date;
     const kodeMataKuliah = req.body.kodeMataKuliah;
     const jenisTugas = req.body.jenisTugas;
     const topikTugas =  req.body.topikTugas;

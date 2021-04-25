@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const taskSchema = new Schema({
-    date : {type : Date, required : true},
+    date : {type : String, required : true},
     kodeMataKuliah : {type : String, required : true},
     jenisTugas : {type : String, required : true},
     topikTugas : {type : String, required : true},
