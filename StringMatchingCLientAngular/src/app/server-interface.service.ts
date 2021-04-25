@@ -5,7 +5,8 @@ import { task } from './models/task'
   providedIn: 'root'
 })
 export class ServerInterfaceService {
-  private url  = "http://localhost:5000";
+  //private url  = "http://localhost:5000";
+  private url = "https://string-matching-tubes-stima.herokuapp.com/";
   //public Task : task;
 
   constructor() {
