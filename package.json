@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cd server && npm start",
+    "test": "cd StringMatchingCLientAngular && ng test",
+    "start": "cd server && node server.js",
     "build": "cd StringMatchingCLientAngular && ng build",
     "heroku-postbuild": "cd StringMatchingCLientAngular &&  ng build --prod",
+    "postinstall": "cd StringMatchingCLientAngular && ng build --output-path dist",
     "ng": "ng",
     "lint": "cd StringMatchingCLientAngular && ng lint",
     "e2e": "cd StringMatchingCLientAngular && ng e2e"
