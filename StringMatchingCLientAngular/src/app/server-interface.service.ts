@@ -11,6 +11,7 @@ export class ServerInterfaceService {
 
   constructor() {
     console.log("Server Interface Initialized");
+    console.log("using url : " + this.url);
    }
 
 
