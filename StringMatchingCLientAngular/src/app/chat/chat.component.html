@@ -19,7 +19,7 @@
 
     <div class="mesgs">
         <div class="msg_history">
-        <li class="message" *ngFor="let message of messages">
+        <li class="message" *ngFor="let message of messages; ; index as i">
 
             <div class="incoming_msg">
                 <div class="incoming_msg_img">
@@ -34,7 +34,7 @@
 
             <div class="outgoing_msg">
                 <div class="sent_msg">
-                <p>{{ message }}</p>
+                <p>{{ resps[i] }}</p>
                 </div>
             </div>
 

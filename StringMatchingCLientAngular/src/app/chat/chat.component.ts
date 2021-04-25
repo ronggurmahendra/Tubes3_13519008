@@ -14,6 +14,7 @@ export class ChatComponent implements OnInit {
   username = '';
   //messages: Message[] = [];
   messages : String[];
+  resps : String[];
   newMessage = '';
   //channelList: ChannelData[];
   chatClient: any;
@@ -21,7 +22,8 @@ export class ChatComponent implements OnInit {
   constructor(private serverInterfaceService : ServerInterfaceService) { }
 
   ngOnInit(): void {
-    this.messages = ["wads","sadczx","sadjshakd"];
+    this.messages = ["mess1","mess2","mess3"];
+    this.resps = ["resp1","resp1","resp1"];
     this.serverInterfaceService.sendDummy();
 
     console.log(this.serverInterfaceService.getTasks());
@@ -39,6 +41,7 @@ export class ChatComponent implements OnInit {
     try {
       console.log(this.newMessage)
       this.messages[this.messages.length] = this.newMessage
+      this.resps[this.resps.length] = this.newMessage
       this.newMessage = '';
     } catch (err) {
       console.log(err);

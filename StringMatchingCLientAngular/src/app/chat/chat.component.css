@@ -20,12 +20,14 @@ img {
 	background: #f8f8f8 none repeat scroll 0 0;
 	float: left;
 	overflow: hidden;
-	width: 100%;
+    height: 100%;    
+    width: 100%;
 	border-right: 1px solid #c4c4c4;
 }
 
 .inbox_msg {
 	border: 1px solid #c4c4c4;
+    height: 100%;
 	clear: both;
 	overflow: hidden;
 }
@@ -159,6 +161,7 @@ img {
 }
 
 .mesgs {
+    height: 100%;
 	float: left;
 	padding: 30px 15px 0 25px;
 	width: 100%;
@@ -213,7 +216,8 @@ img {
 }
 
 .messaging {
-	padding: 0 0 50px 0;
+	padding: 0 0 0px 0;
+    height: 100%;
 }
 
 .msg_history {
