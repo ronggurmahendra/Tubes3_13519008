@@ -1,0 +1,25 @@
+{
+  "name": "tubes3_13519008",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd server && npm start",
+    "build": "cd StringMatchingCLientAngular && ng build",
+    "heroku-postbuild": "ng build --prod" // this will be run on Heroku
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ronggurmahendra/Tubes3_13519008.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ronggurmahendra/Tubes3_13519008/issues"
+  },
+  "homepage": "https://github.com/ronggurmahendra/Tubes3_13519008#readme",
+  "engines": {
+    "node": "12.16.1"
+  },
+}
